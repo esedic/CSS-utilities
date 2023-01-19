@@ -1,0 +1,87 @@
+@iterations: 10;
+
+// MARGINS 
+.margin-loop (@i) when (@i > 0) {
+    .mg-@{i}0 {
+        margin: ~"@{i}0px !important";
+    }
+    .margin-loop(@i - 1);
+}
+
+.margin-left-loop (@i) when (@i > 0) {
+    .mg-l-@{i}0 {
+        margin-left: ~"@{i}0px !important";
+    }
+    .margin-left-loop(@i - 1);
+}
+
+.margin-right-loop (@i) when (@i > 0) {
+    .mg-r-@{i}0 {
+        margin-right: ~"@{i}0px !important";
+    }
+    .margin-right-loop(@i - 1);
+}
+
+.margin-top-loop (@i) when (@i > 0) {
+    .mg-t-@{i}0 {
+        margin-top: ~"@{i}0px !important";
+    }
+    .margin-top-loop(@i - 1);
+}
+
+.margin-bottom-loop (@i) when (@i > 0) {
+    .mg-b-@{i}0 {
+        margin-bottom: ~"@{i}0px !important";
+    }
+    .margin-bottom-loop(@i - 1);
+}
+
+.margin-loop (@iterations);
+.margin-left-loop (@iterations);
+.margin-right-loop (@iterations);
+.margin-top-loop (@iterations);
+.margin-bottom-loop (@iterations);
+
+
+
+// PADDINGS
+.padding-loop (@i) when (@i > 0) {
+    .pd-@{i}0 {
+        padding: ~"@{i}0px !important";
+    }
+    .padding-loop(@i - 1);
+}
+
+.padding-left-loop (@i) when (@i > 0) {
+    .pd-l-@{i}0 {
+        padding-left: ~"@{i}0px !important";
+    }
+    .padding-left-loop(@i - 1);
+}
+
+.padding-right-loop (@i) when (@i > 0) {
+    .pd-r-@{i}0 {
+        padding-right: ~"@{i}0px !important";
+    }
+    .padding-right-loop(@i - 1);
+}
+
+.padding-top-loop (@i) when (@i > 0) {
+    .pd-t-@{i}0 {
+        padding-top: ~"@{i}0px !important";
+    }
+    .padding-top-loop(@i - 1);
+}
+
+.padding-bottom-loop (@i) when (@i > 0) {
+    .pd-b-@{i}0 {
+        padding-bottom: ~"@{i}0px !important";
+    }
+    .padding-bottom-loop(@i - 1);
+}
+
+.padding-loop (@iterations);
+.padding-left-loop (@iterations);
+.padding-right-loop (@iterations);
+.padding-top-loop (@iterations);
+.padding-bottom-loop (@iterations);

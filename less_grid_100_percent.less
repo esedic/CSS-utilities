@@ -1,0 +1,8 @@
+@iterations: 100;
+.grid-loop (@i) when (@i > 0) {
+    .width-@{i} {
+        width: ~"@{i}%";
+    }
+    .grid-loop(@i - 1);
+}
+.grid-loop (@iterations);
